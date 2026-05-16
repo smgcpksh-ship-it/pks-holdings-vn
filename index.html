@@ -1,116 +1,18 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PKS HOLDINGS | Interior Construction Vietnam</title>
-  <meta name="description" content="PKS HOLDINGSはベトナムで内装工事・看板製作・工場サポート・ビジネス支援を行う企業です。日本語・英語・ベトナム語対応。">
-
-  <style>
-    body { font-family: Arial; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #111; color: #fff; padding: 20px; text-align: center; }
-    nav { text-align: center; margin: 10px; }
-    button { margin: 5px; padding: 10px; cursor: pointer; }
-    .container { padding: 20px; max-width: 900px; margin: auto; }
-    .lang { display: none; }
-    .active { display: block; }
-    footer { background: #111; color: #fff; text-align: center; padding: 10px; margin-top: 30px; }
-    iframe { width: 100%; height: 300px; border: 0; }
-  </style>
-</head>
-
-<body>
-<h2>Contact Us</h2>
-
-<p>Email: contact@pks-holdings.vn（仮）</p>
-
-<p>Phone: +84 (Vietnam) / Japan contact available</p>
-
-<form onsubmit="alert('Thank you. We will contact you soon.'); return false;">
-  <input type="text" placeholder="Your Name" required style="width:100%;padding:10px;margin:5px 0;"><br>
-  <input type="email" placeholder="Email" required style="width:100%;padding:10px;margin:5px 0;"><br>
-  <textarea placeholder="Message" required style="width:100%;padding:10px;margin:5px 0;height:120px;"></textarea><br>
-  <button type="submit" style="padding:10px 20px;">Send</button>
-</form>
-<header>
-  <h1>PKS HOLDINGS</h1>
-  <p>Interior / Signage / Factory Support in Vietnam</p>
-</header>
-
-<nav>
-  <button onclick="setLang('jp')">日本語</button>
-  <button onclick="setLang('en')">English</button>
-  <button onclick="setLang('vn')">Tiếng Việt</button>
-</nav>
-
-<div class="container">
-
-  <!-- JP -->
-  <div id="jp" class="lang active">
-    <h2>会社概要</h2>
-    <p>PKS HOLDINGSはベトナムで内装工事、看板製作、工場メンテナンス、ビジネスサポートを行っています。</p>
-
-    <h2>サービス</h2>
-    <ul>
-      <li>内装工事</li>
-      <li>看板・サイン製作</li>
-      <li>工場設備サポート</li>
-      <li>ビジネスコンサルティング</li>
-    </ul>
-
-    <h2>所在地</h2>
-    <p>Số 2C12 Trường Sa, TP Hồ Chí Minh, Việt Nam</p>
-  </div>
-
-  <!-- EN -->
-  <div id="en" class="lang">
-    <h2>About Us</h2>
-    <p>PKS HOLDINGS provides interior construction, signage production, factory support, and business consulting in Vietnam.</p>
-
-    <h2>Services</h2>
-    <ul>
-      <li>Interior Construction</li>
-      <li>Signage Production</li>
-      <li>Factory Maintenance Support</li>
-      <li>Business Consulting</li>
-    </ul>
-
-    <h2>Location</h2>
-    <p>Ho Chi Minh City, Vietnam</p>
-  </div>
-
-  <!-- VN -->
-  <div id="vn" class="lang">
-    <h2>Giới thiệu</h2>
-    <p>PKS HOLDINGS chuyên thi công nội thất, làm bảng hiệu, hỗ trợ nhà máy và tư vấn kinh doanh tại Việt Nam.</p>
-
-    <h2>Dịch vụ</h2>
-    <ul>
-      <li>Thi công nội thất</li>
-      <li>Làm bảng hiệu</li>
-      <li>Bảo trì nhà máy</li>
-      <li>Tư vấn kinh doanh</li>
-    </ul>
-
-    <h2>Địa chỉ</h2>
-    <p>TP Hồ Chí Minh, Việt Nam</p>
-  </div>
-
-  <h2>Google Map</h2>
-  <iframe src="https://www.google.com/maps?q=Ho%20Chi%20Minh%20City&output=embed"></iframe>
-
+<div id="jp">
+<h2>お問い合わせ</h2>
 </div>
 
-<footer>
-  <p>PKS HOLDINGS © 2026</p>
-</footer>
+<div id="en">
+<h2>Contact Us</h2>
+</div>
 
-<script>
-function setLang(lang){
-  document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
-  document.getElementById(lang).classList.add('active');
-}
-</script>
+<div id="vn">
+<h2>Liên hệ</h2>
+</div>
 
-</body>
-</html>
+<form onsubmit="alert('Thank you. We will contact you soon.'); return false;">
+  <input type="text" placeholder="Name / お名前" required style="width:100%;padding:10px;margin:5px 0;"><br>
+  <input type="email" placeholder="Email" required style="width:100%;padding:10px;margin:5px 0;"><br>
+  <textarea placeholder="Message / 内容" required style="width:100%;padding:10px;margin:5px 0;height:120px;"></textarea><br>
+  <button type="submit" style="padding:10px 20px;">Send</button>
+</form>
