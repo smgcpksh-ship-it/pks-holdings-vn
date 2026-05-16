@@ -1,18 +1,109 @@
-<div id="jp">
-<h2>お問い合わせ</h2>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PKS HOLDINGS | Vietnam Construction</title>
+
+  <style>
+    body { font-family: Arial; margin: 0; line-height: 1.6; }
+    header { background:#111; color:#fff; padding:20px; text-align:center; }
+    nav { text-align:center; padding:10px; }
+    button { margin:5px; padding:10px; }
+    .container { padding:20px; max-width:900px; margin:auto; }
+    .lang { display:none; }
+    .active { display:block; }
+    footer { background:#111; color:#fff; text-align:center; padding:10px; }
+    iframe { width:100%; height:300px; border:0; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>PKS HOLDINGS</h1>
+  <p>Interior / Signage / Factory Support in Vietnam</p>
+</header>
+
+<nav>
+  <button onclick="setLang('jp')">日本語</button>
+  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('vn')">Tiếng Việt</button>
+</nav>
+
+<div class="container">
+
+  <!-- JP -->
+  <div id="jp" class="lang active">
+    <h2>会社概要</h2>
+    <p>ベトナムで内装工事・看板製作・工場サポート・ビジネス支援を行っています。</p>
+
+    <h2>サービス</h2>
+    <ul>
+      <li>内装工事</li>
+      <li>看板製作</li>
+      <li>工場メンテナンス</li>
+      <li>ビジネスコンサル</li>
+    </ul>
+
+    <h2>お問い合わせ</h2>
+  </div>
+
+  <!-- EN -->
+  <div id="en" class="lang">
+    <h2>About Us</h2>
+    <p>PKS HOLDINGS provides interior construction, signage, factory support and consulting in Vietnam.</p>
+
+    <h2>Services</h2>
+    <ul>
+      <li>Interior Construction</li>
+      <li>Signage Production</li>
+      <li>Factory Support</li>
+      <li>Business Consulting</li>
+    </ul>
+
+    <h2>Contact</h2>
+  </div>
+
+  <!-- VN -->
+  <div id="vn" class="lang">
+    <h2>Giới thiệu</h2>
+    <p>PKS HOLDINGS chuyên thi công nội thất, bảng hiệu, hỗ trợ nhà máy và tư vấn kinh doanh.</p>
+
+    <h2>Dịch vụ</h2>
+    <ul>
+      <li>Thi công nội thất</li>
+      <li>Làm bảng hiệu</li>
+      <li>Bảo trì nhà máy</li>
+      <li>Tư vấn kinh doanh</li>
+    </ul>
+
+    <h2>Liên hệ</h2>
+  </div>
+
+  <h2>Google Map</h2>
+  <iframe src="https://www.google.com/maps?q=Ho%20Chi%20Minh%20City&output=embed"></iframe>
+
+  <h2>Contact Form</h2>
+  <form onsubmit="alert('Thank you. We will contact you soon.'); return false;">
+    <input type="text" placeholder="Name" required style="width:100%;padding:10px;margin:5px 0;">
+    <input type="email" placeholder="Email" required style="width:100%;padding:10px;margin:5px 0;">
+    <textarea placeholder="Message" required style="width:100%;padding:10px;margin:5px 0;height:120px;"></textarea>
+    <button type="submit" style="padding:10px 20px;">Send</button>
+  </form>
+
 </div>
 
-<div id="en">
-<h2>Contact Us</h2>
-</div>
+<footer>
+  <p>PKS HOLDINGS © 2026</p>
+</footer>
 
-<div id="vn">
-<h2>Liên hệ</h2>
-</div>
+<script>
+function setLang(lang){
+  document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
+}
+</script>
 
-<form onsubmit="alert('Thank you. We will contact you soon.'); return false;">
-  <input type="text" placeholder="Name / お名前" required style="width:100%;padding:10px;margin:5px 0;"><br>
-  <input type="email" placeholder="Email" required style="width:100%;padding:10px;margin:5px 0;"><br>
-  <textarea placeholder="Message / 内容" required style="width:100%;padding:10px;margin:5px 0;height:120px;"></textarea><br>
-  <button type="submit" style="padding:10px 20px;">Send</button>
-</form>
+</body>
+</html>
