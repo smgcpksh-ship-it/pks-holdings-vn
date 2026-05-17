@@ -85,12 +85,41 @@
   <iframe src="https://www.google.com/maps?q=Ho%20Chi%20Minh%20City&output=embed"></iframe>
 
   <h2>Contact Form</h2>
-  <form onsubmit="alert('Thank you. We will contact you soon.'); return false;">
-    <input type="text" placeholder="Name" required style="width:100%;padding:10px;margin:5px 0;">
-    <input type="email" placeholder="Email" required style="width:100%;padding:10px;margin:5px 0;">
-    <textarea placeholder="Message" required style="width:100%;padding:10px;margin:5px 0;height:120px;"></textarea>
-    <button type="submit" style="padding:10px 20px;">Send</button>
-  </form>
+  <h2>Contact Form</h2>
+
+<form action="https://formspree.io/f/mwvzeqad" method="POST">
+
+  <input 
+    type="text" 
+    name="name"
+    placeholder="Name"
+    required
+    style="width:100%;padding:10px;margin:5px 0;"
+  >
+
+  <input 
+    type="email" 
+    name="email"
+    placeholder="Email"
+    required
+    style="width:100%;padding:10px;margin:5px 0;"
+  >
+
+  <textarea 
+    name="message"
+    placeholder="Message"
+    required
+    style="width:100%;padding:10px;margin:5px 0;height:120px;"
+  ></textarea>
+
+  <button 
+    type="submit"
+    style="padding:10px 20px;"
+  >
+    Send
+  </button>
+
+</form>
 
 </div>
 
